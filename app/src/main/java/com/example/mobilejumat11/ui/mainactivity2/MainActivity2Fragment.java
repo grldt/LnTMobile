@@ -1,6 +1,7 @@
 package com.example.mobilejumat11.ui.mainactivity2;
 
 import androidx.lifecycle.ViewModelProviders;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
@@ -42,6 +43,6 @@ public class MainActivity2Fragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        btnFrag1 = findViewById(R.id.)
+
     }
 }
