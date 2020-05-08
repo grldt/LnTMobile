@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.mobilejumat11.ui.mainactivity2.MainActivity2Fragment;
+import com.example.mobilejumat11.ui.mainactivity2.MainActivity2Fragment2;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -15,6 +16,9 @@ public class MainActivity2 extends AppCompatActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, MainActivity2Fragment.newInstance())
+                    .commitNow();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container2, MainActivity2Fragment2.newInstance())
                     .commitNow();
         }
     }
