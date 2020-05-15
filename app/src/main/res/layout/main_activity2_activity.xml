@@ -19,8 +19,30 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:id="@+id/container2"
-        android:layout_weight="90">
+        android:layout_weight="90"
+        android:gravity="center"
+        android:weightSum="30">
 
+        <Button
+            android:id="@+id/btnFrag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag 1"
+            android:layout_weight="10"/>
+
+        <Button
+            android:id="@+id/btnFrag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag 2"
+            android:layout_weight="10"/>
+
+        <Button
+            android:id="@+id/btnFrag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag 2"
+            android:layout_weight="10"/>
 
 
     </LinearLayout>
