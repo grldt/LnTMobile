@@ -30,7 +30,12 @@ public class MainActivity2Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_activity2_fragment, container, false);
+
+        View rootView = inflater.inflate(R.layout.main_activity2_fragment, container, false);
+
+        btnFrag1 = rootView.findViewById(R.id.frag1Btn);
+
+        return rootView;
     }
 
     @Override
