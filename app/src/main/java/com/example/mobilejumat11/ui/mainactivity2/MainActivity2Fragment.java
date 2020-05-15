@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.mobilejumat11.R;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity2Fragment extends Fragment {
 
@@ -34,6 +35,22 @@ public class MainActivity2Fragment extends Fragment {
         View rootView = inflater.inflate(R.layout.main_activity2_fragment, container, false);
 
         btnFrag1 = rootView.findViewById(R.id.frag1Btn);
+
+        btnFrag1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar snackbar = Snackbar
+                        .make(v, "Welcome to LnT", Snackbar.LENGTH_LONG)
+                        .setAction("Click", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Toast.makeText(getContext(),
+                                        "Snackbar berhasil", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                snackbar.show();
+            }
+        });
 
         return rootView;
     }
